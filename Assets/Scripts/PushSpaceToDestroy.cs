@@ -4,12 +4,16 @@ using UnityEngine;
 public class PushSpaceToDestroy : MonoBehaviour
 {
 
+    public GameObject gameObjectToDestroy;
+
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
+           // Destroy(this.gameObject);
+         Destroy(gameObjectToDestroy);
         }
     }
 }
